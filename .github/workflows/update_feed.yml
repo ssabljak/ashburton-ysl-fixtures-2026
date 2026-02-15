@@ -24,6 +24,12 @@ jobs:
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          git add *.ics
-          git commit -m "Update feeds" || exit 0
-          git push
+          # The '|| true' ensures the workflow doesn't crash if no .ics files exist yet
+          git add *.ics || true 
+          # This checks if there are actual changes to commit before trying
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update feeds: $(date)"
+            git push
+          fi
