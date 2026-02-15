@@ -1,24 +1,16 @@
 import requests
 import json
 import datetime
+from urllib.parse import urlencode
 
 def sync():
     # Load settings
     with open('config.json', 'r') as f:
         conf = json.load(f)
 
+    # Simplified headers for proxy compatibility
     headers = {
-        "accept": "application/json",
-        "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
-        "referer": "https://fv.dribl.com/",
-        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
-        "sec-ch-ua": '"Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121"',
-        "sec-ch-ua-mobile": "?0",
-        "sec-ch-ua-platform": '"Windows"',
-        "sec-fetch-dest": "empty",
-        "sec-fetch-mode": "cors",
-        "sec-fetch-site": "same-site",
-        "x-requested-with": "XMLHttpRequest"
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
     }
     
     for team in conf['teams']:
@@ -26,13 +18,18 @@ def sync():
         print(f"Syncing {team['name']} (Arrival: {team['arrival_offset']}m)...")
         
         try:
-            res = requests.get("https://mc-api.dribl.com/api/fixtures", headers=headers, params=params)
+            # --- PROXY WRAPPER ---
+            # GitHub IPs are blocked by Cloudflare (403). We route through AllOrigins proxy.
+            dribl_url = f"https://mc-api.dribl.com/api/fixtures?{urlencode(params)}"
+            res = requests.get("https://api.allorigins.win/get", params={"url": dribl_url}, headers=headers)
         
             if res.status_code != 200:
                 print(f"Failed! Status Code: {res.status_code}. Response: {res.text[:100]}")
                 continue
             
-            data = res.json()
+            # Extract the Dribl JSON from the proxy's 'contents' key
+            data = json.loads(res.json()['contents'])
+            
         except Exception as e:
             print(f"Error fetching {team['name']}: {e}")
             continue
