@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashburton United Fixtures - 2026</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f8f9fa; color: #333; line-height: 1.6; padding: 20px; }
+        .container { max-width: 500px; margin: 40px auto; background: white; padding: 30px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border-top: 10px solid #006837; }
+        .logo { width: 100px; margin-bottom: 20px; }
+        h1 { color: #006837; font-size: 24px; margin-bottom: 8px; }
+        .subtitle { color: #666; font-size: 14px; margin-bottom: 30px; }
+        .team-list { text-align: left; }
+        .team-card { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid #eee; }
+        .team-card:last-child { border-bottom: none; }
+        .team-info { font-weight: 600; color: #222; }
+        .btn { background: #006837; color: white; border: none; padding: 10px 16px; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 700; transition: all 0.2s; text-decoration: none; }
+        .btn:hover { background: #004d29; transform: translateY(-1px); }
+        .btn:active { transform: translateY(0); }
+        .footer { margin-top: 40px; font-size: 11px; color: #aaa; text-transform: uppercase; letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://ashburtonunited.com.au/wp-content/uploads/2021/03/Ashburton-United-SC-Logo.png" class="logo" alt="Ashburton United">
+        <h1>Match Fixtures</h1>
+        <div class="subtitle">Sync your team's schedule to your calendar</div>
+        
+        <div class="team-list">
+            
+                <div class="team-card">
+                    <div class="team-info">U13 Boys</div>
+                    <button class="btn" onclick="subscribe('u13_boys.ics')">SYNC</button>
+                </div>
+                <div class="team-card">
+                    <div class="team-info">U14 Boys</div>
+                    <button class="btn" onclick="subscribe('u14_boys.ics')">SYNC</button>
+                </div>
+                <div class="team-card">
+                    <div class="team-info">U15 Boys</div>
+                    <button class="btn" onclick="subscribe('u15_boys.ics')">SYNC</button>
+                </div>
+                <div class="team-card">
+                    <div class="team-info">U16 Boys</div>
+                    <button class="btn" onclick="subscribe('u16_boys.ics')">SYNC</button>
+                </div>
+                <div class="team-card">
+                    <div class="team-info">U18 Boys</div>
+                    <button class="btn" onclick="subscribe('u18_boys.ics')">SYNC</button>
+                </div>
+        </div>
+
+        <div class="footer">Updated: 15 Feb 2026, 11:15 PM</div>
+    </div>
+
+    <script>
+        function subscribe(fileName) {
+            // Get the base URL of the current page (works for GitHub Pages)
+            const baseUrl = window.location.href.split(/[?#]/)[0].replace('index.html', '');
+            const icsUrl = baseUrl + fileName;
+            
+            const isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+            const isAndroid = /Android/.test(navigator.userAgent);
+
+            if (isiOS) {
+                // iPhone: webcal:// triggers the native calendar subscription prompt
+                window.location.href = icsUrl.replace('https://', 'webcal://');
+            } else if (isAndroid) {
+                // Android: Direct redirect to Google Calendar's web import tool
+                window.location.href = "https://www.google.com/calendar/render?cid=" + encodeURIComponent(icsUrl);
+            } else {
+                // Desktop: Copy to clipboard and guide the user
+                navigator.clipboard.writeText(icsUrl).then(() => {
+                    alert("Link copied to clipboard! \n\nPaste this URL into Outlook or Apple Calendar as a 'New Calendar Subscription'.");
+                });
+            }
+        }
+    </script>
+</body>
+</html>
