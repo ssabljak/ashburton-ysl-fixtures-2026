@@ -27,6 +27,11 @@ def sync():
         
         try:
             res = requests.get("https://mc-api.dribl.com/api/fixtures", headers=headers, params=params)
+        
+            if res.status_code != 200:
+                print(f"Failed! Status Code: {res.status_code}. Response: {res.text[:100]}")
+                continue
+            
             data = res.json()
         except Exception as e:
             print(f"Error fetching {team['name']}: {e}")
