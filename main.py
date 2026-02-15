@@ -2,18 +2,22 @@ import requests
 import json
 import datetime
 from urllib.parse import urlencode
+from zoneinfo import ZoneInfo # Standard in Python 3.9+
 
 def sync():
     # Load settings
     with open('config.json', 'r') as f:
         conf = json.load(f)
 
+    # Set our local timezone anchor
+    local_tz = ZoneInfo("Australia/Melbourne")
+
     headers = {
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
     }
     
-    # YOUR NEW CLOUDFLARE WORKER URL HERE
-    MY_PROXY_URL = "https://dribl-proxy.steve-786.workers.dev/" 
+    # Your private Cloudflare Worker URL
+    MY_PROXY_URL = "https://dribl-proxy.your-name.workers.dev" 
 
     for team in conf['teams']:
         params = {**conf['common_params'], "league": team['league']}
@@ -21,7 +25,7 @@ def sync():
         
         try:
             # --- PROXY WRAPPER ---
-            # Using private Cloudflare Worker to bypass GitHub IP block and Public Proxy timeouts
+            # Route through private Worker to bypass GitHub IP block
             dribl_url = f"https://mc-api.dribl.com/api/fixtures?{urlencode(params)}"
             res = requests.get(MY_PROXY_URL, params={"url": dribl_url}, headers=headers)
         
@@ -29,6 +33,7 @@ def sync():
                 print(f"Failed! Status Code: {res.status_code}. Response: {res.text[:100]}")
                 continue
             
+            # Parse the direct JSON from your worker
             data = res.json()
             
         except Exception as e:
@@ -45,7 +50,12 @@ def sync():
 
         for item in data['data']:
             attr = item['attributes']
-            dt_kickoff = datetime.datetime.strptime(attr['date'], "%Y-%m-%dT%H:%M:%S.%fZ")
+            
+            # --- TIMEZONE WRANGLING ---
+            # 1. Parse Dribl UTC string
+            dt_utc = datetime.datetime.strptime(attr['date'], "%Y-%m-%dT%H:%M:%S.%fZ").replace(tzinfo=datetime.timezone.utc)
+            # 2. Convert to Melbourne local time
+            dt_kickoff = dt_utc.astimezone(local_tz)
             
             # --- BYE HANDLING ---
             if attr.get('bye_flag'):
@@ -80,12 +90,13 @@ def sync():
             # --- MATCH EVENT ---
             location = f"{attr['ground_name']} - {attr['field_name']}" if attr['ground_name'] else "TBA"
 
+            # Use TZID to ensure global accuracy while maintaining local convenience
             ics.extend([
                 "BEGIN:VEVENT",
                 f"UID:{item['hash_id']}@dribl",
                 f"SUMMARY:{attr['name']}",
-                f"DTSTART:{dt_kickoff.strftime('%Y%m%dT%H%M%SZ')}",
-                f"DTEND:{dt_end.strftime('%Y%m%dT%H%M%SZ')}",
+                f"DTSTART;TZID=Australia/Melbourne:{dt_kickoff.strftime('%Y%m%dT%H%M%S')}",
+                f"DTEND;TZID=Australia/Melbourne:{dt_end.strftime('%Y%m%dT%H%M%S')}",
                 f"LOCATION:{location}",
                 f"DESCRIPTION:Arrival: {dt_arrival.strftime('%I:%M %p')} ({team['arrival_offset']}m prior)\\nRound: {attr['full_round']}",
                 # Alert 1: Prep
