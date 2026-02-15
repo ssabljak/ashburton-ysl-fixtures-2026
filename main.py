@@ -17,7 +17,7 @@ def sync():
     }
     
     # Your private Cloudflare Worker URL
-    MY_PROXY_URL = "https://dribl-proxy.your-name.workers.dev" 
+    MY_PROXY_URL = "https://dribl-proxy.steve-786.workers.dev/" 
 
     for team in conf['teams']:
         params = {**conf['common_params'], "league": team['league']}
