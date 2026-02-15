@@ -8,27 +8,28 @@ def sync():
     with open('config.json', 'r') as f:
         conf = json.load(f)
 
-    # Simplified headers for proxy compatibility
     headers = {
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
     }
     
+    # YOUR NEW CLOUDFLARE WORKER URL HERE
+    MY_PROXY_URL = "https://dribl-proxy.steve-786.workers.dev/" 
+
     for team in conf['teams']:
         params = {**conf['common_params'], "league": team['league']}
         print(f"Syncing {team['name']} (Arrival: {team['arrival_offset']}m)...")
         
         try:
             # --- PROXY WRAPPER ---
-            # GitHub IPs are blocked by Cloudflare (403). We route through AllOrigins proxy.
+            # Using private Cloudflare Worker to bypass GitHub IP block and Public Proxy timeouts
             dribl_url = f"https://mc-api.dribl.com/api/fixtures?{urlencode(params)}"
-            res = requests.get("https://api.allorigins.win/get", params={"url": dribl_url}, headers=headers)
+            res = requests.get(MY_PROXY_URL, params={"url": dribl_url}, headers=headers)
         
             if res.status_code != 200:
                 print(f"Failed! Status Code: {res.status_code}. Response: {res.text[:100]}")
                 continue
             
-            # Extract the Dribl JSON from the proxy's 'contents' key
-            data = json.loads(res.json()['contents'])
+            data = res.json()
             
         except Exception as e:
             print(f"Error fetching {team['name']}: {e}")
