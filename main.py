@@ -119,5 +119,31 @@ def sync():
         with open(filename, 'w') as f:
             f.write("\n".join(ics))
 
+        # --- GENERATE LANDING PAGE ---
+        try:
+            with open('template.html', 'r') as f:
+                html_content = f.read()
+    
+            team_rows = ""
+            for team in conf['teams']:
+                fname = f"{team['name'].lower().replace(' ', '_')}.ics"
+                team_rows += f'''
+                <div class="team-card">
+                    <div class="team-info">{team['name']}</div>
+                    <button class="btn" onclick="subscribe('{fname}')">SYNC</button>
+                </div>'''
+    
+            # Replace placeholders
+            timestamp = datetime.datetime.now().strftime("%d %b %Y, %I:%M %p")
+            html_content = html_content.replace("{{TEAMS}}", team_rows)
+            html_content = html_content.replace("{{TIMESTAMP}}", timestamp)
+    
+            with open("index.html", "w") as f:
+                f.write(html_content)
+            print("Successfully generated index.html")
+            
+        except FileNotFoundError:
+            print("Error: template.html not found. Skipping HTML generation.")
+
 if __name__ == "__main__":
     sync()
