@@ -1,0 +1,24 @@
+{
+  "common_params": {
+    "date_range": "all",
+    "season": "nPmrj2rmow",
+    "competition": "2PmjO2pANZ",
+    "club": "XWdgZxlKRA",
+    "tenant": "w8zdBWPmBX",
+    "timezone": "Australia/Melbourne"
+  },
+  "halftime_mins": 10,
+  "post_match_buffer_mins": 10,
+  "smart_alerts": {
+    "morning_cutoff_hour": 11,
+    "night_before_hour": 20,
+    "prep_offset_mins": 240
+  },
+  "teams": [
+    {"name": "U13 Boys", "league": "k2KpG7boNY", "duration": 60, "arrival_offset": 60},
+    {"name": "U14 Boys", "league": "LBdDyeLGmb", "duration": 60, "arrival_offset": 60},
+    {"name": "U15 Boys", "league": "vbd9jQvDm4", "duration": 70, "arrival_offset": 60},
+    {"name": "U16 Boys", "league": "R1K3M833mQ", "duration": 80, "arrival_offset": 60},
+    {"name": "U18 Boys", "league": "njdyYknAd5", "duration": 90, "arrival_offset": 75}
+  ]
+}
