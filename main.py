@@ -1,28 +1,24 @@
-# Updated main.py with refactored code
+# Updated Main.py
 
-# Main code starts here
+# This script generates logos and index.html once instead of inside the loop
 
-# Function to generate logo
-
-def generate_logo(data):
-    # Implementation for logo generation
+def generate_logo():
+    # Function to generate a logo
     pass
 
-# Index generation related code
 
-def generate_index(data):
-    # Implementation for generating index.html file
+def generate_index_html():
+    # Function to generate index.html
     pass
 
-# Assuming teams_data is a list of team info
 
-# Generate logo and index.html outside the loop
-logo = generate_logo(teams_data)  # Generate logo once
+# Assuming teams is a list of team objects
+teams = []
 
-# Now we can loop through the teams to create other components
-for team in teams_data:
-    # Process team data and create necessary files
-    # create_team_files(team)
+# Generate logo and index.html once
+generate_logo()
+generate_index_html()
 
-# Generate index.html with the logo
-generate_index(logo)
+for team in teams:
+    # Process each team
+    pass
