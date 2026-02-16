@@ -131,7 +131,7 @@ def sync():
                 team_rows += f'''
                 <div class="team-card">
                     <div class="team-info">{team['name']}</div>
-                    <button class="btn" onclick="subscribe('{fname}')">SYNC</button>
+                    <button class="btn" onclick="subscribe('{fname}')">Add to Calendar</button>
                 </div>'''
     
             # Replace placeholders
