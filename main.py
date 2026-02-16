@@ -71,7 +71,7 @@ def sync():
                 ics.extend([
                     "BEGIN:VEVENT",
                     f"UID:bye-{item.get('hash_id','noid')}@dribl",
-                    f"SUMMARY:BYE - {team['name']}",
+                    f"SUMMARY:BYE - {attr.get('home_team_name') or attr.get('away_team_name')}",
                     f"DTSTART;VALUE=DATE:{date_str}",
                     f"DTEND;VALUE=DATE:{(dt_kickoff + datetime.timedelta(days=1)).strftime('%Y%m%d')}",
                     "TRANSP:TRANSPARENT",
@@ -107,7 +107,7 @@ def sync():
             ics.extend([
                 "BEGIN:VEVENT",
                 f"UID:{item.get('hash_id','noid')}@dribl",
-                f"SUMMARY:{attr.get('name','Match')}",
+                f"SUMMARY:{attr.get('home_team_name')} v {attr.get('away_team_name')}",
                 f"DTSTART;TZID=Australia/Melbourne:{dt_kickoff.strftime('%Y%m%dT%H%M%S')}",
                 f"DTEND;TZID=Australia/Melbourne:{dt_end.strftime('%Y%m%dT%H%M%S')}",
                 f"LOCATION:{location}",
