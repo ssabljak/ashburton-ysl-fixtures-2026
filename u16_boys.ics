@@ -9,7 +9,8 @@ SUMMARY:Monash City Villarreal FC U16  vs Ashburton United SC U16
 DTSTART;TZID=Australia/Melbourne:20260215T131500
 DTEND;TZID=Australia/Melbourne:20260215T145500
 LOCATION:Argyle Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:15 PM (60m prior)\nRound: Round 1
+DESCRIPTION:Arrival: 12:15 PM (60m prior)
+Round: Round 1
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -27,7 +28,8 @@ SUMMARY:FV54534807 - Ashburton United SC v Port Melbourne SC
 DTSTART;TZID=Australia/Melbourne:20260222T130000
 DTEND;TZID=Australia/Melbourne:20260222T144000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:00 PM (60m prior)\nRound: Round 2
+DESCRIPTION:Arrival: 12:00 PM (60m prior)
+Round: Round 2
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -45,7 +47,8 @@ SUMMARY:FV54534814 - Ringwood City FC v Ashburton United SC
 DTSTART;TZID=Australia/Melbourne:20260301T135000
 DTEND;TZID=Australia/Melbourne:20260301T153000
 LOCATION:Jubilee Park - Main Pitch (S)
-DESCRIPTION:Arrival: 12:50 PM (60m prior)\nRound: Round 3
+DESCRIPTION:Arrival: 12:50 PM (60m prior)
+Round: Round 3
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -63,7 +66,8 @@ SUMMARY:FV54534817 - Ashburton United SC v Gippsland United FC
 DTSTART;TZID=Australia/Melbourne:20260308T133000
 DTEND;TZID=Australia/Melbourne:20260308T151000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:30 PM (60m prior)\nRound: Round 4
+DESCRIPTION:Arrival: 12:30 PM (60m prior)
+Round: Round 4
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -81,7 +85,8 @@ SUMMARY:FV54534822 - Kingston City FC v Ashburton United SC
 DTSTART;TZID=Australia/Melbourne:20260315T134500
 DTEND;TZID=Australia/Melbourne:20260315T152500
 LOCATION:The Grange Reserve - Clayton South - Main Pitch
-DESCRIPTION:Arrival: 12:45 PM (60m prior)\nRound: Round 5
+DESCRIPTION:Arrival: 12:45 PM (60m prior)
+Round: Round 5
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -99,7 +104,8 @@ SUMMARY:FV54534827 - Ashburton United SC v Mornington SC
 DTSTART;TZID=Australia/Melbourne:20260322T130000
 DTEND;TZID=Australia/Melbourne:20260322T144000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:00 PM (60m prior)\nRound: Round 6
+DESCRIPTION:Arrival: 12:00 PM (60m prior)
+Round: Round 6
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -117,7 +123,8 @@ SUMMARY:Boroondara Eagles FC U16  vs Ashburton United SC U16
 DTSTART;TZID=Australia/Melbourne:20260329T000000
 DTEND;TZID=Australia/Melbourne:20260329T014000
 LOCATION:TBA
-DESCRIPTION:Arrival: 11:00 PM (60m prior)\nRound: Round 7
+DESCRIPTION:Arrival: 11:00 PM (60m prior)
+Round: Round 7
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -135,7 +142,8 @@ SUMMARY:FV54534837 - Ashburton United SC v Nunawading City FC
 DTSTART;TZID=Australia/Melbourne:20260419T130000
 DTEND;TZID=Australia/Melbourne:20260419T144000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:00 PM (60m prior)\nRound: Round 8
+DESCRIPTION:Arrival: 12:00 PM (60m prior)
+Round: Round 8
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -153,7 +161,8 @@ SUMMARY:FV54534846 - Goulburn Valley Suns FC v Ashburton United SC
 DTSTART;TZID=Australia/Melbourne:20260426T141500
 DTEND;TZID=Australia/Melbourne:20260426T155500
 LOCATION:John McEwen Reserve - Pitch 2
-DESCRIPTION:Arrival: 01:15 PM (60m prior)\nRound: Round 9
+DESCRIPTION:Arrival: 01:15 PM (60m prior)
+Round: Round 9
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -171,7 +180,8 @@ SUMMARY:FV54534851 - Ashburton United SC v Monash City Villarreal FC
 DTSTART;TZID=Australia/Melbourne:20260503T140000
 DTEND;TZID=Australia/Melbourne:20260503T154000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 01:00 PM (60m prior)\nRound: Round 10
+DESCRIPTION:Arrival: 01:00 PM (60m prior)
+Round: Round 10
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -189,7 +199,8 @@ SUMMARY:FV54534852 - Port Melbourne SC v Ashburton United SC
 DTSTART;TZID=Australia/Melbourne:20260510T133000
 DTEND;TZID=Australia/Melbourne:20260510T151000
 LOCATION:STRUC Steel Stadium - Pitch 1
-DESCRIPTION:Arrival: 12:30 PM (60m prior)\nRound: Round 11
+DESCRIPTION:Arrival: 12:30 PM (60m prior)
+Round: Round 11
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -207,7 +218,8 @@ SUMMARY:FV54534859 - Ashburton United SC v Ringwood City FC
 DTSTART;TZID=Australia/Melbourne:20260517T140000
 DTEND;TZID=Australia/Melbourne:20260517T154000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 01:00 PM (60m prior)\nRound: Round 12
+DESCRIPTION:Arrival: 01:00 PM (60m prior)
+Round: Round 12
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -225,7 +237,8 @@ SUMMARY:FV54534862 - Gippsland United FC v Ashburton United SC
 DTSTART;TZID=Australia/Melbourne:20260524T131000
 DTEND;TZID=Australia/Melbourne:20260524T145000
 LOCATION:Ronald Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:10 PM (60m prior)\nRound: Round 13
+DESCRIPTION:Arrival: 12:10 PM (60m prior)
+Round: Round 13
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -243,7 +256,8 @@ SUMMARY:FV54534867 - Ashburton United SC v Kingston City FC
 DTSTART;TZID=Australia/Melbourne:20260531T130000
 DTEND;TZID=Australia/Melbourne:20260531T144000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:00 PM (60m prior)\nRound: Round 14
+DESCRIPTION:Arrival: 12:00 PM (60m prior)
+Round: Round 14
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -261,7 +275,8 @@ SUMMARY:FV54534872 - Mornington SC v Ashburton United SC
 DTSTART;TZID=Australia/Melbourne:20260607T130000
 DTEND;TZID=Australia/Melbourne:20260607T144000
 LOCATION:Peninsula Grammar School - The Detmold
-DESCRIPTION:Arrival: 12:00 PM (60m prior)\nRound: Round 15
+DESCRIPTION:Arrival: 12:00 PM (60m prior)
+Round: Round 15
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -279,7 +294,8 @@ SUMMARY:FV54534879 - Ashburton United SC v Boroondara Eagles FC
 DTSTART;TZID=Australia/Melbourne:20260614T130000
 DTEND;TZID=Australia/Melbourne:20260614T144000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:00 PM (60m prior)\nRound: Round 16
+DESCRIPTION:Arrival: 12:00 PM (60m prior)
+Round: Round 16
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -297,7 +313,8 @@ SUMMARY:FV54534882 - Nunawading City FC v Ashburton United SC
 DTSTART;TZID=Australia/Melbourne:20260621T140000
 DTEND;TZID=Australia/Melbourne:20260621T154000
 LOCATION:Mahoneys Reserve - Pitch 1
-DESCRIPTION:Arrival: 01:00 PM (60m prior)\nRound: Round 17
+DESCRIPTION:Arrival: 01:00 PM (60m prior)
+Round: Round 17
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -315,7 +332,8 @@ SUMMARY:FV54534891 - Ashburton United SC v Goulburn Valley Suns FC
 DTSTART;TZID=Australia/Melbourne:20260628T133000
 DTEND;TZID=Australia/Melbourne:20260628T151000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:30 PM (60m prior)\nRound: Round 18
+DESCRIPTION:Arrival: 12:30 PM (60m prior)
+Round: Round 18
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -333,7 +351,8 @@ SUMMARY:FV54534896 - Monash City Villarreal FC v Ashburton United SC
 DTSTART;TZID=Australia/Melbourne:20260712T121500
 DTEND;TZID=Australia/Melbourne:20260712T135500
 LOCATION:Argyle Reserve - Main Pitch
-DESCRIPTION:Arrival: 11:15 AM (60m prior)\nRound: Round 19
+DESCRIPTION:Arrival: 11:15 AM (60m prior)
+Round: Round 19
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -351,7 +370,8 @@ SUMMARY:FV54534897 - Ashburton United SC v Port Melbourne SC
 DTSTART;TZID=Australia/Melbourne:20260719T130000
 DTEND;TZID=Australia/Melbourne:20260719T144000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:00 PM (60m prior)\nRound: Round 20
+DESCRIPTION:Arrival: 12:00 PM (60m prior)
+Round: Round 20
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -369,7 +389,8 @@ SUMMARY:FV54534904 - Ringwood City FC v Ashburton United SC
 DTSTART;TZID=Australia/Melbourne:20260726T135000
 DTEND;TZID=Australia/Melbourne:20260726T153000
 LOCATION:Jubilee Park - Main Pitch (S)
-DESCRIPTION:Arrival: 12:50 PM (60m prior)\nRound: Round 21
+DESCRIPTION:Arrival: 12:50 PM (60m prior)
+Round: Round 21
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -387,7 +408,8 @@ SUMMARY:FV54534907 - Gippsland United FC v Ashburton United SC
 DTSTART;TZID=Australia/Melbourne:20260802T131000
 DTEND;TZID=Australia/Melbourne:20260802T145000
 LOCATION:Ronald Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:10 PM (60m prior)\nRound: Round 22
+DESCRIPTION:Arrival: 12:10 PM (60m prior)
+Round: Round 22
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -405,7 +427,8 @@ SUMMARY:FV54534912 - Kingston City FC v Ashburton United SC
 DTSTART;TZID=Australia/Melbourne:20260816T134500
 DTEND;TZID=Australia/Melbourne:20260816T152500
 LOCATION:The Grange Reserve - Clayton South - Main Pitch
-DESCRIPTION:Arrival: 12:45 PM (60m prior)\nRound: Round 23
+DESCRIPTION:Arrival: 12:45 PM (60m prior)
+Round: Round 23
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -423,7 +446,8 @@ SUMMARY:FV54534917 - Ashburton United SC v Mornington SC
 DTSTART;TZID=Australia/Melbourne:20260823T130000
 DTEND;TZID=Australia/Melbourne:20260823T144000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:00 PM (60m prior)\nRound: Round 24
+DESCRIPTION:Arrival: 12:00 PM (60m prior)
+Round: Round 24
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -441,7 +465,8 @@ SUMMARY:FV54534924 - Boroondara Eagles FC v Ashburton United SC
 DTSTART;TZID=Australia/Melbourne:20260830T140000
 DTEND;TZID=Australia/Melbourne:20260830T154000
 LOCATION:Macleay Park - Pitch 3 East
-DESCRIPTION:Arrival: 01:00 PM (60m prior)\nRound: Round 25
+DESCRIPTION:Arrival: 01:00 PM (60m prior)
+Round: Round 25
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -459,7 +484,8 @@ SUMMARY:FV54534927 - Ashburton United SC v Nunawading City FC
 DTSTART;TZID=Australia/Melbourne:20260906T130000
 DTEND;TZID=Australia/Melbourne:20260906T144000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:00 PM (60m prior)\nRound: Round 26
+DESCRIPTION:Arrival: 12:00 PM (60m prior)
+Round: Round 26
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
@@ -477,7 +503,8 @@ SUMMARY:FV54534936 - Goulburn Valley Suns FC v Ashburton United SC
 DTSTART;TZID=Australia/Melbourne:20260913T141500
 DTEND;TZID=Australia/Melbourne:20260913T155500
 LOCATION:John McEwen Reserve - Pitch 2
-DESCRIPTION:Arrival: 01:15 PM (60m prior)\nRound: Round 27
+DESCRIPTION:Arrival: 01:15 PM (60m prior)
+Round: Round 27
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
