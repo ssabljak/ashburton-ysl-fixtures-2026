@@ -2,7 +2,8 @@ import requests
 import json
 import datetime
 from urllib.parse import urlencode
-from zoneinfo import ZoneInfo # Standard in Python 3.9+
+from zoneinfo import ZoneInfo
+from collections import Counter
 
 def sync():
     # Load settings
@@ -144,6 +145,34 @@ def sync():
             
         except FileNotFoundError:
             print("Error: template.html not found. Skipping HTML generation.")
+
+        all_logos = []
+    
+        # First, collect every logo URL from every fixture in every team
+        for team in conf['teams']:
+            # ... (your existing requests logic) ...
+            data = res.json()
+            
+            for item in data.get('data', []):
+                attr = item.get('attributes', {})
+                if attr.get('home_logo'):
+                    all_logos.append(attr['home_logo'])
+                if attr.get('away_logo'):
+                    all_logos.append(attr['away_logo'])
+    
+        # Now, find the most frequent one
+        if all_logos:
+            most_common_logo, count = Counter(all_logos).most_common(1)[0]
+            print(f"Most frequent logo found ({count} occurrences): {most_common_logo}")
+            
+            try:
+                img_res = requests.get(MY_PROXY_URL, params={"url": most_common_logo}, stream=True)
+                if img_res.status_code == 200:
+                    with open("logo.png", 'wb') as f:
+                        f.write(img_res.content)
+                    print("Successfully saved winner logo as logo.png")
+            except Exception as e:
+                print(f"Failed to download winner logo: {e}")
 
 if __name__ == "__main__":
     sync()
