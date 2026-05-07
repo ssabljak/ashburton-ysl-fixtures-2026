@@ -104,6 +104,14 @@ def sync():
             location = f"{attr.get('ground_name') or ''} - {attr.get('field_name') or ''}".strip(" -") or "TBA"
 
             # Use TZID to ensure global accuracy while maintaining local convenience
+            # Build description with proper iCalendar line folding (CRLF + space)
+            description_lines = [
+                f"Kickoff: {dt_kickoff.strftime('%I:%M %p')}",
+                f"Arrival: {dt_arrival.strftime('%I:%M %p')} ({team['arrival_offset']}m prior)",
+                f"Round: {attr.get('full_round','?')}"
+            ]
+            description = "\\n".join(description_lines)
+            
             ics.extend([
                 "BEGIN:VEVENT",
                 f"UID:{item.get('hash_id','noid')}@dribl",
@@ -111,7 +119,7 @@ def sync():
                 f"DTSTART;TZID=Australia/Melbourne:{dt_arrival.strftime('%Y%m%dT%H%M%S')}",
                 f"DTEND;TZID=Australia/Melbourne:{dt_end.strftime('%Y%m%dT%H%M%S')}",
                 f"LOCATION:{location}",
-                f"DESCRIPTION:Kickoff: {dt_kickoff.strftime('%I:%M %p')}\nArrival: {dt_arrival.strftime('%I:%M %p')} ({team['arrival_offset']}m prior)\nRound: {attr.get('full_round','?')}",
+                f"DESCRIPTION:{description}",
                 # Alert 1: Prep
                 "BEGIN:VALARM",
                 f"TRIGGER:-PT{prep_delta_mins}M",
@@ -136,7 +144,7 @@ def sync():
         ics.append("END:VCALENDAR")
         filename = f"{team['name'].lower().replace(' ', '_')}.ics"
         with open(filename, 'w', encoding='utf-8') as f:
-            f.write("\n".join(ics))
+            f.write("\r\n".join(ics))
 
     # --- GENERATE LANDING PAGE (ONCE) ---
     try:
