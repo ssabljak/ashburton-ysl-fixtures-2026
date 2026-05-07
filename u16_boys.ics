@@ -5,11 +5,12 @@ METHOD:PUBLISH
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:pN6R940X2N@dribl
-SUMMARY:Monash City Villarreal FC U16  vs Ashburton United SC U16 
-DTSTART;TZID=Australia/Melbourne:20260215T131500
+SUMMARY:Monash City Villarreal FC U16 v Ashburton United SC U16
+DTSTART;TZID=Australia/Melbourne:20260215T121500
 DTEND;TZID=Australia/Melbourne:20260215T145500
 LOCATION:Argyle Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:15 PM (60m prior)
+DESCRIPTION:Kickoff: 01:15 PM
+Arrival: 12:15 PM (60m prior)
 Round: Round 1
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -24,11 +25,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:EN2pnDVWBd@dribl
-SUMMARY:FV54534807 - Ashburton United SC v Port Melbourne SC
-DTSTART;TZID=Australia/Melbourne:20260222T130000
+SUMMARY:Ashburton United SC U16 v Port Melbourne SC U16
+DTSTART;TZID=Australia/Melbourne:20260222T120000
 DTEND;TZID=Australia/Melbourne:20260222T144000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:00 PM (60m prior)
+DESCRIPTION:Kickoff: 01:00 PM
+Arrival: 12:00 PM (60m prior)
 Round: Round 2
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -43,11 +45,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:vmZp9VPYLK@dribl
-SUMMARY:FV54534814 - Ringwood City FC v Ashburton United SC
-DTSTART;TZID=Australia/Melbourne:20260301T135000
+SUMMARY:Ringwood City FC U16 v Ashburton United SC U16
+DTSTART;TZID=Australia/Melbourne:20260301T125000
 DTEND;TZID=Australia/Melbourne:20260301T153000
 LOCATION:Jubilee Park - Main Pitch (S)
-DESCRIPTION:Arrival: 12:50 PM (60m prior)
+DESCRIPTION:Kickoff: 01:50 PM
+Arrival: 12:50 PM (60m prior)
 Round: Round 3
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -62,11 +65,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ld454n7nxm@dribl
-SUMMARY:FV54534817 - Ashburton United SC v Gippsland United FC
-DTSTART;TZID=Australia/Melbourne:20260308T133000
+SUMMARY:Ashburton United SC U16 v Gippsland United FC U16
+DTSTART;TZID=Australia/Melbourne:20260308T123000
 DTEND;TZID=Australia/Melbourne:20260308T151000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:30 PM (60m prior)
+DESCRIPTION:Kickoff: 01:30 PM
+Arrival: 12:30 PM (60m prior)
 Round: Round 4
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -81,11 +85,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:1K3pvQgqGd@dribl
-SUMMARY:FV54534822 - Kingston City FC v Ashburton United SC
-DTSTART;TZID=Australia/Melbourne:20260315T134500
-DTEND;TZID=Australia/Melbourne:20260315T152500
+SUMMARY:Kingston City FC U16 v Ashburton United SC U16
+DTSTART;TZID=Australia/Melbourne:20260315T133000
+DTEND;TZID=Australia/Melbourne:20260315T161000
 LOCATION:The Grange Reserve - Clayton South - Main Pitch
-DESCRIPTION:Arrival: 12:45 PM (60m prior)
+DESCRIPTION:Kickoff: 02:30 PM
+Arrival: 01:30 PM (60m prior)
 Round: Round 5
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -100,11 +105,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:BdDb9PYn1N@dribl
-SUMMARY:FV54534827 - Ashburton United SC v Mornington SC
-DTSTART;TZID=Australia/Melbourne:20260322T130000
+SUMMARY:Ashburton United SC U16 v Mornington SC U16
+DTSTART;TZID=Australia/Melbourne:20260322T120000
 DTEND;TZID=Australia/Melbourne:20260322T144000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:00 PM (60m prior)
+DESCRIPTION:Kickoff: 01:00 PM
+Arrival: 12:00 PM (60m prior)
 Round: Round 6
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -119,11 +125,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:BdDb9PY63N@dribl
-SUMMARY:Boroondara Eagles FC U16  vs Ashburton United SC U16 
-DTSTART;TZID=Australia/Melbourne:20260329T000000
-DTEND;TZID=Australia/Melbourne:20260329T014000
-LOCATION:TBA
-DESCRIPTION:Arrival: 11:00 PM (60m prior)
+SUMMARY:Boroondara Eagles FC U16 v Ashburton United SC U16
+DTSTART;TZID=Australia/Melbourne:20260412T101000
+DTEND;TZID=Australia/Melbourne:20260412T125000
+LOCATION:Macleay Park - Pitch 3 East
+DESCRIPTION:Kickoff: 11:10 AM
+Arrival: 10:10 AM (60m prior)
 Round: Round 7
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -138,11 +145,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:4KLlzJ3ZRK@dribl
-SUMMARY:FV54534837 - Ashburton United SC v Nunawading City FC
-DTSTART;TZID=Australia/Melbourne:20260419T130000
+SUMMARY:Ashburton United SC U16 v Nunawading City FC U16
+DTSTART;TZID=Australia/Melbourne:20260419T120000
 DTEND;TZID=Australia/Melbourne:20260419T144000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:00 PM (60m prior)
+DESCRIPTION:Kickoff: 01:00 PM
+Arrival: 12:00 PM (60m prior)
 Round: Round 8
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -157,11 +165,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bd9pWOb1ZK@dribl
-SUMMARY:FV54534846 - Goulburn Valley Suns FC v Ashburton United SC
-DTSTART;TZID=Australia/Melbourne:20260426T141500
+SUMMARY:Goulburn Valley Suns FC U16 v Ashburton United SC U16
+DTSTART;TZID=Australia/Melbourne:20260426T131500
 DTEND;TZID=Australia/Melbourne:20260426T155500
-LOCATION:John McEwen Reserve - Pitch 2
-DESCRIPTION:Arrival: 01:15 PM (60m prior)
+LOCATION:John McEwen Reserve - Main Pitch 2
+DESCRIPTION:Kickoff: 02:15 PM
+Arrival: 01:15 PM (60m prior)
 Round: Round 9
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -176,11 +185,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:EN2pnDznVd@dribl
-SUMMARY:FV54534851 - Ashburton United SC v Monash City Villarreal FC
-DTSTART;TZID=Australia/Melbourne:20260503T140000
+SUMMARY:Ashburton United SC U16 v Monash City Villarreal FC U16
+DTSTART;TZID=Australia/Melbourne:20260503T130000
 DTEND;TZID=Australia/Melbourne:20260503T154000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 01:00 PM (60m prior)
+DESCRIPTION:Kickoff: 02:00 PM
+Arrival: 01:00 PM (60m prior)
 Round: Round 10
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -195,11 +205,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nmYnZXo7DN@dribl
-SUMMARY:FV54534852 - Port Melbourne SC v Ashburton United SC
-DTSTART;TZID=Australia/Melbourne:20260510T133000
+SUMMARY:Port Melbourne SC U16 v Ashburton United SC U16
+DTSTART;TZID=Australia/Melbourne:20260510T123000
 DTEND;TZID=Australia/Melbourne:20260510T151000
 LOCATION:STRUC Steel Stadium - Pitch 1
-DESCRIPTION:Arrival: 12:30 PM (60m prior)
+DESCRIPTION:Kickoff: 01:30 PM
+Arrival: 12:30 PM (60m prior)
 Round: Round 11
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -214,11 +225,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:Pmj27aGJQm@dribl
-SUMMARY:FV54534859 - Ashburton United SC v Ringwood City FC
-DTSTART;TZID=Australia/Melbourne:20260517T140000
+SUMMARY:Ashburton United SC U16 v Ringwood City FC U16
+DTSTART;TZID=Australia/Melbourne:20260517T130000
 DTEND;TZID=Australia/Melbourne:20260517T154000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 01:00 PM (60m prior)
+DESCRIPTION:Kickoff: 02:00 PM
+Arrival: 01:00 PM (60m prior)
 Round: Round 12
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -233,11 +245,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:2Kp0pZoZzK@dribl
-SUMMARY:FV54534862 - Gippsland United FC v Ashburton United SC
-DTSTART;TZID=Australia/Melbourne:20260524T131000
+SUMMARY:Gippsland United FC U16 v Ashburton United SC U16
+DTSTART;TZID=Australia/Melbourne:20260524T121000
 DTEND;TZID=Australia/Melbourne:20260524T145000
-LOCATION:Ronald Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:10 PM (60m prior)
+LOCATION:Ronald Reserve - Pitch 1
+DESCRIPTION:Kickoff: 01:10 PM
+Arrival: 12:10 PM (60m prior)
 Round: Round 13
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -252,11 +265,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:8NO5XGbvbd@dribl
-SUMMARY:FV54534867 - Ashburton United SC v Kingston City FC
-DTSTART;TZID=Australia/Melbourne:20260531T130000
+SUMMARY:Ashburton United SC U16 v Kingston City FC U16
+DTSTART;TZID=Australia/Melbourne:20260531T120000
 DTEND;TZID=Australia/Melbourne:20260531T144000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:00 PM (60m prior)
+DESCRIPTION:Kickoff: 01:00 PM
+Arrival: 12:00 PM (60m prior)
 Round: Round 14
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -271,11 +285,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:EN2pnDyoed@dribl
-SUMMARY:FV54534872 - Mornington SC v Ashburton United SC
-DTSTART;TZID=Australia/Melbourne:20260607T130000
+SUMMARY:Mornington SC U16 v Ashburton United SC U16
+DTSTART;TZID=Australia/Melbourne:20260607T120000
 DTEND;TZID=Australia/Melbourne:20260607T144000
-LOCATION:Peninsula Grammar School - The Detmold
-DESCRIPTION:Arrival: 12:00 PM (60m prior)
+LOCATION:Peninsula Grammar School - The Detmold - Pitch 1
+DESCRIPTION:Kickoff: 01:00 PM
+Arrival: 12:00 PM (60m prior)
 Round: Round 15
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -290,11 +305,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:8NO5XGb2vd@dribl
-SUMMARY:FV54534879 - Ashburton United SC v Boroondara Eagles FC
-DTSTART;TZID=Australia/Melbourne:20260614T130000
+SUMMARY:Ashburton United SC U16 v Boroondara Eagles FC U16
+DTSTART;TZID=Australia/Melbourne:20260614T120000
 DTEND;TZID=Australia/Melbourne:20260614T144000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:00 PM (60m prior)
+DESCRIPTION:Kickoff: 01:00 PM
+Arrival: 12:00 PM (60m prior)
 Round: Round 16
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -309,11 +325,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:EN2pnDyLVd@dribl
-SUMMARY:FV54534882 - Nunawading City FC v Ashburton United SC
-DTSTART;TZID=Australia/Melbourne:20260621T140000
+SUMMARY:Nunawading City FC U16 v Ashburton United SC U16
+DTSTART;TZID=Australia/Melbourne:20260621T130000
 DTEND;TZID=Australia/Melbourne:20260621T154000
 LOCATION:Mahoneys Reserve - Pitch 1
-DESCRIPTION:Arrival: 01:00 PM (60m prior)
+DESCRIPTION:Kickoff: 02:00 PM
+Arrival: 01:00 PM (60m prior)
 Round: Round 17
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -328,11 +345,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:emAnePMYxN@dribl
-SUMMARY:FV54534891 - Ashburton United SC v Goulburn Valley Suns FC
-DTSTART;TZID=Australia/Melbourne:20260628T133000
+SUMMARY:Ashburton United SC U16 v Goulburn Valley Suns FC U16
+DTSTART;TZID=Australia/Melbourne:20260628T123000
 DTEND;TZID=Australia/Melbourne:20260628T151000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:30 PM (60m prior)
+DESCRIPTION:Kickoff: 01:30 PM
+Arrival: 12:30 PM (60m prior)
 Round: Round 18
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -347,11 +365,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nmYnZXxVyN@dribl
-SUMMARY:FV54534896 - Monash City Villarreal FC v Ashburton United SC
+SUMMARY:Monash City Villarreal FC U16 v Ashburton United SC U16
 DTSTART;TZID=Australia/Melbourne:20260712T121500
-DTEND;TZID=Australia/Melbourne:20260712T135500
+DTEND;TZID=Australia/Melbourne:20260712T145500
 LOCATION:Argyle Reserve - Main Pitch
-DESCRIPTION:Arrival: 11:15 AM (60m prior)
+DESCRIPTION:Kickoff: 01:15 PM
+Arrival: 12:15 PM (60m prior)
 Round: Round 19
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -366,11 +385,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:gdM6EPl52m@dribl
-SUMMARY:FV54534897 - Ashburton United SC v Port Melbourne SC
-DTSTART;TZID=Australia/Melbourne:20260719T130000
+SUMMARY:Ashburton United SC U16 v Port Melbourne SC U16
+DTSTART;TZID=Australia/Melbourne:20260719T120000
 DTEND;TZID=Australia/Melbourne:20260719T144000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:00 PM (60m prior)
+DESCRIPTION:Kickoff: 01:00 PM
+Arrival: 12:00 PM (60m prior)
 Round: Round 20
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -385,11 +405,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pmvvwqV1ym@dribl
-SUMMARY:FV54534904 - Ringwood City FC v Ashburton United SC
-DTSTART;TZID=Australia/Melbourne:20260726T135000
-DTEND;TZID=Australia/Melbourne:20260726T153000
+SUMMARY:Ringwood City FC U16 v Ashburton United SC U16
+DTSTART;TZID=Australia/Melbourne:20260726T132000
+DTEND;TZID=Australia/Melbourne:20260726T160000
 LOCATION:Jubilee Park - Main Pitch (S)
-DESCRIPTION:Arrival: 12:50 PM (60m prior)
+DESCRIPTION:Kickoff: 02:20 PM
+Arrival: 01:20 PM (60m prior)
 Round: Round 21
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -404,11 +425,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ld454nxb2m@dribl
-SUMMARY:FV54534907 - Gippsland United FC v Ashburton United SC
-DTSTART;TZID=Australia/Melbourne:20260802T131000
+SUMMARY:Gippsland United FC U16 v Ashburton United SC U16
+DTSTART;TZID=Australia/Melbourne:20260802T121000
 DTEND;TZID=Australia/Melbourne:20260802T145000
-LOCATION:Ronald Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:10 PM (60m prior)
+LOCATION:Ronald Reserve - Pitch 1
+DESCRIPTION:Kickoff: 01:10 PM
+Arrival: 12:10 PM (60m prior)
 Round: Round 22
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -423,11 +445,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:1K3pvJbv9d@dribl
-SUMMARY:FV54534912 - Kingston City FC v Ashburton United SC
-DTSTART;TZID=Australia/Melbourne:20260816T134500
+SUMMARY:Kingston City FC U16 v Ashburton United SC U16
+DTSTART;TZID=Australia/Melbourne:20260816T124500
 DTEND;TZID=Australia/Melbourne:20260816T152500
 LOCATION:The Grange Reserve - Clayton South - Main Pitch
-DESCRIPTION:Arrival: 12:45 PM (60m prior)
+DESCRIPTION:Kickoff: 01:45 PM
+Arrival: 12:45 PM (60m prior)
 Round: Round 23
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -442,11 +465,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:4KLlz0YLDK@dribl
-SUMMARY:FV54534917 - Ashburton United SC v Mornington SC
-DTSTART;TZID=Australia/Melbourne:20260823T130000
+SUMMARY:Ashburton United SC U16 v Mornington SC U16
+DTSTART;TZID=Australia/Melbourne:20260823T120000
 DTEND;TZID=Australia/Melbourne:20260823T144000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:00 PM (60m prior)
+DESCRIPTION:Kickoff: 01:00 PM
+Arrival: 12:00 PM (60m prior)
 Round: Round 24
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -461,11 +485,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:BdDb9zWV6N@dribl
-SUMMARY:FV54534924 - Boroondara Eagles FC v Ashburton United SC
-DTSTART;TZID=Australia/Melbourne:20260830T140000
+SUMMARY:Boroondara Eagles FC U16 v Ashburton United SC U16
+DTSTART;TZID=Australia/Melbourne:20260830T130000
 DTEND;TZID=Australia/Melbourne:20260830T154000
 LOCATION:Macleay Park - Pitch 3 East
-DESCRIPTION:Arrival: 01:00 PM (60m prior)
+DESCRIPTION:Kickoff: 02:00 PM
+Arrival: 01:00 PM (60m prior)
 Round: Round 25
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -480,11 +505,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:PmrGqE8AVN@dribl
-SUMMARY:FV54534927 - Ashburton United SC v Nunawading City FC
-DTSTART;TZID=Australia/Melbourne:20260906T130000
+SUMMARY:Ashburton United SC U16 v Nunawading City FC U16
+DTSTART;TZID=Australia/Melbourne:20260906T120000
 DTEND;TZID=Australia/Melbourne:20260906T144000
 LOCATION:Dorothy Laver West Reserve - Main Pitch
-DESCRIPTION:Arrival: 12:00 PM (60m prior)
+DESCRIPTION:Kickoff: 01:00 PM
+Arrival: 12:00 PM (60m prior)
 Round: Round 26
 BEGIN:VALARM
 TRIGGER:-PT240M
@@ -499,11 +525,12 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:OmepXonZyd@dribl
-SUMMARY:FV54534936 - Goulburn Valley Suns FC v Ashburton United SC
-DTSTART;TZID=Australia/Melbourne:20260913T141500
+SUMMARY:Goulburn Valley Suns FC U16 v Ashburton United SC U16
+DTSTART;TZID=Australia/Melbourne:20260913T131500
 DTEND;TZID=Australia/Melbourne:20260913T155500
-LOCATION:John McEwen Reserve - Pitch 2
-DESCRIPTION:Arrival: 01:15 PM (60m prior)
+LOCATION:John McEwen Reserve - Main Pitch 2
+DESCRIPTION:Kickoff: 02:15 PM
+Arrival: 01:15 PM (60m prior)
 Round: Round 27
 BEGIN:VALARM
 TRIGGER:-PT240M
