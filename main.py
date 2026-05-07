@@ -87,8 +87,8 @@ def sync():
 
             # --- DURATION & TIMES ---
             total_duration = team['duration'] + conf['halftime_mins'] + conf['post_match_buffer_mins']
-            dt_end = dt_kickoff + datetime.timedelta(minutes=total_duration)
             dt_arrival = dt_kickoff - datetime.timedelta(minutes=team['arrival_offset'])
+            dt_end = dt_arrival + datetime.timedelta(minutes=total_duration + team['arrival_offset'])
 
             # --- SMART PREP ALERT LOGIC ---
             if dt_kickoff.hour < conf['smart_alerts']['morning_cutoff_hour']:
@@ -108,10 +108,10 @@ def sync():
                 "BEGIN:VEVENT",
                 f"UID:{item.get('hash_id','noid')}@dribl",
                 f"SUMMARY:{attr.get('home_team_name')} v {attr.get('away_team_name')}",
-                f"DTSTART;TZID=Australia/Melbourne:{dt_kickoff.strftime('%Y%m%dT%H%M%S')}",
+                f"DTSTART;TZID=Australia/Melbourne:{dt_arrival.strftime('%Y%m%dT%H%M%S')}",
                 f"DTEND;TZID=Australia/Melbourne:{dt_end.strftime('%Y%m%dT%H%M%S')}",
                 f"LOCATION:{location}",
-                f"DESCRIPTION:Arrival: {dt_arrival.strftime('%I:%M %p')} ({team['arrival_offset']}m prior)\nRound: {attr.get('full_round','?')}",
+                f"DESCRIPTION:Kickoff: {dt_kickoff.strftime('%I:%M %p')}\nArrival: {dt_arrival.strftime('%I:%M %p')} ({team['arrival_offset']}m prior)\nRound: {attr.get('full_round','?')}",
                 # Alert 1: Prep
                 "BEGIN:VALARM",
                 f"TRIGGER:-PT{prep_delta_mins}M",
