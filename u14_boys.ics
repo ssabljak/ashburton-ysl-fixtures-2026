@@ -258,12 +258,12 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lNbJjrvMAN@dribl
 SUMMARY:Mornington SC U14 v Ashburton United SC U14
-DTSTART;TZID=Australia/Melbourne:20260607T083000
-DTEND;TZID=Australia/Melbourne:20260607T105000
+DTSTART;TZID=Australia/Melbourne:20260607T091500
+DTEND;TZID=Australia/Melbourne:20260607T113500
 LOCATION:Peninsula Grammar School - The Detmold - Pitch 1
-DESCRIPTION:Kickoff: 09:30 AM\nArrival: 08:30 AM (60m prior)\nRound: Round 15
+DESCRIPTION:Kickoff: 10:15 AM\nArrival: 09:15 AM (60m prior)\nRound: Round 15
 BEGIN:VALARM
-TRIGGER:-PT810M
+TRIGGER:-PT855M
 ACTION:DISPLAY
 DESCRIPTION:Match Prep: U14 Boys
 END:VALARM
@@ -402,12 +402,12 @@ END:VEVENT
 BEGIN:VEVENT
 UID:pN6R94b2DN@dribl
 SUMMARY:Kingston City FC U14 v Ashburton United SC U14
-DTSTART;TZID=Australia/Melbourne:20260816T091500
-DTEND;TZID=Australia/Melbourne:20260816T113500
+DTSTART;TZID=Australia/Melbourne:20260816T103000
+DTEND;TZID=Australia/Melbourne:20260816T125000
 LOCATION:The Grange Reserve - Clayton South - Main Pitch
-DESCRIPTION:Kickoff: 10:15 AM\nArrival: 09:15 AM (60m prior)\nRound: Round 23
+DESCRIPTION:Kickoff: 11:30 AM\nArrival: 10:30 AM (60m prior)\nRound: Round 23
 BEGIN:VALARM
-TRIGGER:-PT855M
+TRIGGER:-PT240M
 ACTION:DISPLAY
 DESCRIPTION:Match Prep: U14 Boys
 END:VALARM

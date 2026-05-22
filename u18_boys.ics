@@ -382,10 +382,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vmZp9B882K@dribl
 SUMMARY:Kingston City FC U18 v Ashburton United SC U18
-DTSTART;TZID=Australia/Melbourne:20260816T144500
-DTEND;TZID=Australia/Melbourne:20260816T173500
+DTSTART;TZID=Australia/Melbourne:20260816T153000
+DTEND;TZID=Australia/Melbourne:20260816T182000
 LOCATION:The Grange Reserve - Clayton South - Main Pitch
-DESCRIPTION:Kickoff: 03:45 PM\nArrival: 02:45 PM (60m prior)\nRound: Round 23
+DESCRIPTION:Kickoff: 04:30 PM\nArrival: 03:30 PM (60m prior)\nRound: Round 23
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY

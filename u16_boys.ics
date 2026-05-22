@@ -402,10 +402,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:1K3pvJbv9d@dribl
 SUMMARY:Kingston City FC U16 v Ashburton United SC U16
-DTSTART;TZID=Australia/Melbourne:20260816T124500
-DTEND;TZID=Australia/Melbourne:20260816T152500
+DTSTART;TZID=Australia/Melbourne:20260816T134500
+DTEND;TZID=Australia/Melbourne:20260816T162500
 LOCATION:The Grange Reserve - Clayton South - Main Pitch
-DESCRIPTION:Kickoff: 01:45 PM\nArrival: 12:45 PM (60m prior)\nRound: Round 23
+DESCRIPTION:Kickoff: 02:45 PM\nArrival: 01:45 PM (60m prior)\nRound: Round 23
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
