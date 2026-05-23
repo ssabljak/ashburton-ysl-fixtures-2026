@@ -418,12 +418,12 @@ END:VEVENT
 BEGIN:VEVENT
 UID:Pmj27AzXQm@dribl
 SUMMARY:Boroondara Eagles FC U18 v Ashburton United SC U18
-DTSTART;TZID=Australia/Melbourne:20260830T093000
-DTEND;TZID=Australia/Melbourne:20260830T122000
-LOCATION:Carey Sports Complex - Wilcox Field B
-DESCRIPTION:Kickoff: 10:30 AM\nArrival: 09:30 AM (60m prior)\nRound: Round 25
+DTSTART;TZID=Australia/Melbourne:20260830T124500
+DTEND;TZID=Australia/Melbourne:20260830T153500
+LOCATION:Macleay Park - Pitch 3 East
+DESCRIPTION:Kickoff: 01:45 PM\nArrival: 12:45 PM (60m prior)\nRound: Round 25
 BEGIN:VALARM
-TRIGGER:-PT870M
+TRIGGER:-PT240M
 ACTION:DISPLAY
 DESCRIPTION:Match Prep: U18 Boys
 END:VALARM

@@ -438,10 +438,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:BdDb9zWV6N@dribl
 SUMMARY:Boroondara Eagles FC U16 v Ashburton United SC U16
-DTSTART;TZID=Australia/Melbourne:20260830T130000
-DTEND;TZID=Australia/Melbourne:20260830T154000
+DTSTART;TZID=Australia/Melbourne:20260830T110000
+DTEND;TZID=Australia/Melbourne:20260830T134000
 LOCATION:Macleay Park - Pitch 3 East
-DESCRIPTION:Kickoff: 02:00 PM\nArrival: 01:00 PM (60m prior)\nRound: Round 25
+DESCRIPTION:Kickoff: 12:00 PM\nArrival: 11:00 AM (60m prior)\nRound: Round 25
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY
