@@ -188,7 +188,7 @@ UID:bd9pWJJLlK@dribl
 SUMMARY:Port Melbourne SC U13 v Ashburton United SC U13
 DTSTART;TZID=Australia/Melbourne:20260510T073000
 DTEND;TZID=Australia/Melbourne:20260510T095000
-LOCATION:STRUC Steel Stadium - Pitch 1 - Half Field
+LOCATION:STRUC Steel Stadium - Pitch 1A - Half Field
 DESCRIPTION:Kickoff: 08:30 AM\nArrival: 07:30 AM (60m prior)\nRound: Round 11
 BEGIN:VALARM
 TRIGGER:-PT750M
