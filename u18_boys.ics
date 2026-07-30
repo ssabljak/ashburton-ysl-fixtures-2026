@@ -364,10 +364,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:pmvvwqV8Em@dribl
 SUMMARY:Gippsland United FC U18 v Ashburton United SC U18
-DTSTART;TZID=Australia/Melbourne:20260802T140000
-DTEND;TZID=Australia/Melbourne:20260802T165000
-LOCATION:Ronald Reserve - Pitch 1
-DESCRIPTION:Kickoff: 03:00 PM\nArrival: 02:00 PM (60m prior)\nRound: Round 22
+DTSTART;TZID=Australia/Melbourne:20260802T150000
+DTEND;TZID=Australia/Melbourne:20260802T175000
+LOCATION:Baxter Park (Warragul) - Main Pitch
+DESCRIPTION:Kickoff: 04:00 PM\nArrival: 03:00 PM (60m prior)\nRound: Round 22
 BEGIN:VALARM
 TRIGGER:-PT240M
 ACTION:DISPLAY

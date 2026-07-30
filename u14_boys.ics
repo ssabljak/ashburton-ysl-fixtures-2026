@@ -384,12 +384,12 @@ END:VEVENT
 BEGIN:VEVENT
 UID:4KLlzJkQ0K@dribl
 SUMMARY:Gippsland United FC U14 v Ashburton United SC U14
-DTSTART;TZID=Australia/Melbourne:20260802T090000
-DTEND;TZID=Australia/Melbourne:20260802T112000
-LOCATION:Ronald Reserve - Pitch 1
-DESCRIPTION:Kickoff: 10:00 AM\nArrival: 09:00 AM (60m prior)\nRound: Round 22
+DTSTART;TZID=Australia/Melbourne:20260802T102000
+DTEND;TZID=Australia/Melbourne:20260802T124000
+LOCATION:Baxter Park (Warragul) - Main Pitch
+DESCRIPTION:Kickoff: 11:20 AM\nArrival: 10:20 AM (60m prior)\nRound: Round 22
 BEGIN:VALARM
-TRIGGER:-PT840M
+TRIGGER:-PT240M
 ACTION:DISPLAY
 DESCRIPTION:Match Prep: U14 Boys
 END:VALARM
