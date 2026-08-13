@@ -116,7 +116,7 @@ UID:jdywl66bEN@dribl
 SUMMARY:Boroondara Eagles FC U13 v Ashburton United SC U13
 DTSTART;TZID=Australia/Melbourne:20260412T072000
 DTEND;TZID=Australia/Melbourne:20260412T094000
-LOCATION:Macleay Park - Pitch 3 West - 1A Half Field
+LOCATION:Macleay Park - Pitch 3A West
 DESCRIPTION:Kickoff: 08:20 AM\nArrival: 07:20 AM (60m prior)\nRound: Round 7
 BEGIN:VALARM
 TRIGGER:-PT740M
@@ -440,7 +440,7 @@ UID:8NO5XBgXnd@dribl
 SUMMARY:Boroondara Eagles FC U13 v Ashburton United SC U13
 DTSTART;TZID=Australia/Melbourne:20260830T080000
 DTEND;TZID=Australia/Melbourne:20260830T102000
-LOCATION:Macleay Park - Pitch 3 West - 1A Half Field
+LOCATION:Macleay Park - Pitch 3A West
 DESCRIPTION:Kickoff: 09:00 AM\nArrival: 08:00 AM (60m prior)\nRound: Round 25
 BEGIN:VALARM
 TRIGGER:-PT780M
